@@ -1,4 +1,4 @@
-Čau!
-Kā Tev iet?
-Kā Tevi sauc?
-Ejam pastaigāties!
+Čau! <br />
+Kā Tev iet? <br />
+Kā Tevi sauc? <br />
+Ejam pastaigāties! <br />
