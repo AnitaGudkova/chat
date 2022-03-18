@@ -13,3 +13,5 @@ async function ieladetChataZinas(){
     let dati = await datiNoServera.text();
     zinas.innerHTML = dati;
 }
+
+setInterval( ieladetChataZinas, 1000 )
