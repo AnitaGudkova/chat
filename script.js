@@ -20,4 +20,20 @@ async function ieladetChataZinas(){
     zinas.innerHTML = dati;
 }
 
-setInterval( ieladetChataZinas, 1000 )
+
+//setInterval( ieladetChataZinas, 1000 )
+
+async function ieladetChataZinasJson(){
+
+    let datiNoServera = await fetch(API + '/lasit');
+    let dati = await datiNoServera.json();
+    
+    
+    let i = 0;
+    while( i < await dati.length ) {
+        console.log(i);
+        zinas.innerHTML = zinas.innerHTML + dati[i]['zina'];
+        i++;
+    }
+
+}
