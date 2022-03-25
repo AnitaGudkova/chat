@@ -1,4 +1,4 @@
-    const API = "https://chat.anitagudkova.repl.co/"
+    const API = "https://chat.anitagudkova.repl.co"
 
     let zina = document.querySelector('.manaZina');
     let zinas = document.querySelector('.chataZinas');
@@ -21,7 +21,7 @@ async function ieladetChataZinas(){
 }
 
 
-setInterval( ieladetChataZinas, 1000 )
+//setInterval( ieladetChataZinas, 1000 )
 
 async function ieladetChataZinasJson(){
 
@@ -31,11 +31,11 @@ async function ieladetChataZinasJson(){
     zinas.innerHTML = '';
     let i = 0;
     while( i < await dati.length ) {
-        //console.log(dati[i]);
+        
         let laiks = '[ <i>' + '????? ' + '</i>] ';
         
         if ("laiks" in dati[i]) {
-            let laiks = '[ <i>' + dati[i]['laiks'] + '</i>] ';
+            laiks = '[ <i>' + dati[i]['laiks'] + '</i>] ';
         }            
          zinas.innerHTML = zinas.innerHTML + laiks + dati[i]['vards'] + ': ' + dati[i]['zina'] + '<br />';
         
